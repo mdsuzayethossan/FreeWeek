@@ -14,6 +14,26 @@ body {
   list-style-type: none;
 }
 
+.web-shadow {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.web-gardient {
+  background: linear-gradient(#7531FA, hsl(215deg, 90%, 63%));
+}
+
+.web-text-color {
+  color: #7531FA;
+}
+
+.web-text-color:hover {
+  color: #7531FA;
+}
+
+.web-gray {
+  color: gray;
+}
+
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
@@ -96,4 +116,23 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+#register .nav-pills .nav-link.active, #register .nav-pills .show > .nav-link {
+  background-color: white;
+  color: #7531FA !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#register .web-social-btn {
+  width: 49%;
+}
+#register .web-eye {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  right: 5%;
+  z-index: 99;
 }/*# sourceMappingURL=style.css.map */

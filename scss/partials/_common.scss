@@ -8,4 +8,19 @@ body {
     box-sizing: border-box;
     list-style-type: none;
 }
+.web-shadow {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+}
+.web-gardient {
+    background: linear-gradient(#7531FA, hsl(215, 90%, 63%))
+}
+.web-text-color {
+    color: $primary-text-color;
+}
+.web-text-color:hover {
+    color: $primary-text-color;
+}
+.web-gray {
+    color: gray;
+}
 
