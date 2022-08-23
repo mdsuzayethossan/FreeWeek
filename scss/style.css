@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+1.#48c6ef → #6f86d6
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+.nav-scroller .nav {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-scroller .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+@media (min-width: 992px) {
+  .navbar .container .navbar-collapse .navbar-nav .nav-item {
+    padding: 0 21px;
+  }
+}
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  color: white;
+}
+@media (max-width: 599px) {
+  .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 0.4rem 0;
+  }
+}
+@media (min-width: 600px) {
+  .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 0.4rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 0;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */
