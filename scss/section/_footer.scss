@@ -1,0 +1,12 @@
+footer {
+    .container {
+        .footer-social {
+            i {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                @include border-radius-50;
+            }
+        }
+    }
+}

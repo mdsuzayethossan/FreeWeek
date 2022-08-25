@@ -11,6 +11,11 @@ body {
 .web-shadow {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
 }
+.btn-shadow {
+    padding: .5rem 1.3rem;
+    filter: drop-shadow(0.20rem 0.20rem 0.4rem rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(0.20rem 0.20rem 0.4rem rgba(0, 0, 0, 0.5));
+}
 .web-gardient {
     background: linear-gradient(#7531FA, #4c92f6)
 }
@@ -28,5 +33,14 @@ body {
 }
 .web-gray {
     color: gray;
+}
+.web-footer-color {
+    color: #869fb2;
+}
+.web-footer-color:hover {
+    color: white;
+}
+.web-text-black {
+    color: #374957;
 }
 
