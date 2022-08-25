@@ -15,6 +15,8 @@
     <main>
         <section id="register" class="d-flex align-items-center" style="height: 100vh">
             <div class="container">
+                <a class="navbar-brand fw-semibold d-flex justify-content-center mb-4 fs-2 align-items-center web-text-color"
+                    href="index.html"><i class="fa-brands fa-connectdevelop pe-2 fs-1 web-text-color"></i>FreeWeek</a>
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 col-lg-5 m-auto p-5 web-shadow rounded-2 web-gardient">
                         <ul class="nav nav-pills mb-3 d-flex justify-content-center py-2 rounded-2" id="pills-tab"
@@ -28,7 +30,7 @@
                                 <button class="nav-link fw-semibold px-5 rounded-pill text-white" id="pills-profile-tab"
                                     data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
                                     aria-controls="pills-profile" aria-selected="false">Sign
-                                    up</button>
+                                    In</button>
                             </li>
                         </ul>
                         <div class="tab-content justify-content-center" id="pills-tabContent">
@@ -44,7 +46,69 @@
                                             <a href="#" style="color: #DB4437;"
                                                 class="btn bg-white border-0 rounded shadow-sm fw-semibold web-social-btn py-2"
                                                 role="button" aria-pressed="true" style="background-color: #DB4437;"><i
-                                                    class="fa-brands fa-facebook-f pe-2 fs-5"></i>Google</a>
+                                                    class="fa-brands fa-facebook-f pe-2 fs-5"></i>Facebook</a>
+                                        </div>
+                                        <div class="input-group mt-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text py-3" style="border-radius: 5px 0 0 5px;"
+                                                    id="validationTooltipUsernamePrepend"><i
+                                                        class="fa-solid fa-user web-gray"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control shadow-none"
+                                                id="validationTooltipUsername" placeholder="Username or Email"
+                                                aria-describedby="validationTooltipUsernamePrepend" required>
+                                        </div>
+                                        <div class="input-group mt-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text py-3" style="border-radius: 5px 0 0 5px;"
+                                                    id="validationTooltipUsernamePrepend"><i
+                                                        class="fa-solid fa-envelope web-gray"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control shadow-none"
+                                                id="validationTooltipUsername" placeholder="Email"
+                                                aria-describedby="validationTooltipUsernamePrepend" required>
+                                        </div>
+                                        <div class="input-group mt-3 position-relative">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text py-3" style="border-radius: 5px 0 0 5px;"
+                                                    id="validationTooltipUsernamePrepend"><i
+                                                        class="fa-solid fa-lock web-gray"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control shadow-none"
+                                                id="validationTooltipUsername" placeholder="Password"
+                                                aria-describedby="validationTooltipUsernamePrepend" required>
+                                            <span class="position-absolute web-eye web-gray"><i
+                                                    class="fa-solid fa-eye"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                                required>
+                                            <label class="form-check-label text-white" for="invalidCheck2">
+                                                Agree to terms and conditions
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-center"><button
+                                            class="btn web-text-color border-0 fw-semibold px-5 rounded-pill mt-3 bg-white py-2"
+                                            type="submit">Submit
+                                            form</button></div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                        <div class="input-group d-flex justify-content-between">
+                                            <a href="#" style="color: #DB4437;"
+                                                class="btn bg-white border-0 rounded shadow-sm fw-semibold web-social-btn py-2"
+                                                role="button" aria-pressed="true" style="background-color: #DB4437;"><i
+                                                    class="fa-brands fa-google pe-2 fs-5"></i>Google</a>
+                                            <a href="#" style="color: #DB4437;"
+                                                class="btn bg-white border-0 rounded shadow-sm fw-semibold web-social-btn py-2"
+                                                role="button" aria-pressed="true" style="background-color: #DB4437;"><i
+                                                    class="fa-brands fa-facebook-f pe-2 fs-5"></i>Facebook</a>
                                         </div>
                                         <div class="input-group mt-3">
                                             <div class="input-group-prepend">
@@ -75,14 +139,10 @@
                                         </div>
                                     </div>
                                     <div class="text-center"><button
-                                            class="btn web-text-color border-0 fw-semibold px-5 rounded-pill mt-3 bg-white"
+                                            class="btn web-text-color border-0 fw-semibold px-5 rounded-pill mt-3 bg-white py-2"
                                             type="submit">Submit
                                             form</button></div>
                                 </form>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">
-                                ji
                             </div>
 
                         </div>

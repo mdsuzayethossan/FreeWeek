@@ -12,10 +12,16 @@ body {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
 }
 .web-gardient {
-    background: linear-gradient(#7531FA, hsl(215, 90%, 63%))
+    background: linear-gradient(#7531FA, #4c92f6)
 }
 .web-text-color {
     color: $primary-text-color;
+}
+.web-btn {
+    background-color: #2669ea;
+}
+.web-btn:hover {
+    background-color: #2669ea;
 }
 .web-text-color:hover {
     color: $primary-text-color;
