@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeWeek</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5779382e95.js" crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav section start here -->
+    <nav class="navbar navbar-expand-lg bg-dark" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-semibold text-white d-flex fs-3 align-items-center" href="index.html"><i
+                    class="fa-brands fa-connectdevelop pe-2 fs-1" style="color: white;"></i>FreeWeek</a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <div class="navbar-collapse container">
+                    <ul class="navbar-nav mt-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#workspace">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">Category</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Settings</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center ms-auto">
+                        <a href="" class="text-white me-4 text-decoration-none">Sell your content</a>
+                        <a href="" class="text-white me-4 text-decoration-none">Pricing</a>
+                        <!-- <p class="mb-0">
+                        <a href="register.html" class="text-white me-4 text-decoration-none fw-semibold">Log in</a>
+                        <a href="register.html" class="text-white me-4 text-decoration-none fw-semibold">Sign up</a>
+                    </p> -->
+                        <a href="" class="text-white me-4"><i class="fa-regular fa-bell"></i></a>
+                        <div class="btn-group">
+                            <button type="button" class="text-white border-0 bg-transparent dropdown-toggle"
+                                data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <img src="images/suzayet.jpg" class="rounded-circle" alt=""
+                                    style="width: 30px; height: 30px;">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end p-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/suzayet.jpg" class="rounded-circle" alt="suzayet"
+                                        style="width: 70px; height: 70px;">
+                                    <div class="info_user ps-3">
+                                        <a href="" class="text-secondary text-decoration-none">mdsuzayet377</a>
+                                        <a href=""
+                                            class="text-secondary fw-light text-decoration-none">md.suzayet.377@gmail.com</a>
+                                        <button type="button" class="btn btn-primary fw-light mt-2">Edit
+                                            profile</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <li class="d-flex align-items-center fw-lighter my-2"><i
+                                        class="fa-regular fa-heart"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light fs-6"
+                                        type="button">FAVORITES</button>
+                                </li>
+                                <li class="d-flex align-items-center my-2"><i
+                                        class="fa-regular fa-circle-down"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light" type="button">DOWNLOADS</button>
+                                </li>
+                                <li class="d-flex align-items-center my-2"><i class="fa-regular fa-user"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light fs-6"
+                                        type="button">FOLLOWING</button>
+                                </li>
+                                <li class="d-flex align-items-center my-2"><i class="fa-solid fa-grip"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light fs-6"
+                                        type="button">COLLECTIONS</button>
+                                </li>
+                                <hr>
+
+                                <li class="d-flex align-items-center my-2"><i class="fa-solid fa-laptop"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light"
+                                        type="button fs-6">DEVICES</button>
+                                </li>
+                                <li class="d-flex align-items-center my-2"><i
+                                        class="fa-regular fa-credit-card"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light" type="button">MY
+                                        SUBSCRIPTION</button></li>
+                                <li class="d-flex align-items-center my-2"><i class="fa-solid fa-headset"></i><button
+                                        class="border-0 bg-transparent ps-2 fw-light"
+                                        type="button fs-6">SUPPORT</button>
+                                </li>
+                                <hr>
+                                <li class="d-flex align-items-center my-2"><i class="fa-solid fa-power-off"></i><button
+                                        class="border-0 bg-transparent ps-2 text-primary" type="button">LOGOUT</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav section end here -->
+    <!-- <header class="navbar navbar-dark sticky-top bg-white flex-md-nowrap px-2 shadow">
+        <a class="fw-semibold d-flex justify-content-center fs-2 align-items-center web-text-color text-decoration-none"
+            href="index.html"><i class="fa-brands fa-connectdevelop pe-2 fs-1 web-text-color"></i>FreeWeek</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+            aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+    </header> -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users" class="align-text-bottom"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                                Reports
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Integrations
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+                        <span>Saved reports</span>
+                        <a class="link-secondary" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle" class="align-text-bottom"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text" class="align-text-bottom"></span>
+                                Current month
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text" class="align-text-bottom"></span>
+                                Last quarter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text" class="align-text-bottom"></span>
+                                Social engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text" class="align-text-bottom"></span>
+                                Year-end sale
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="search-main">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-4 border-bottom">
+                    <div class="btn-toolbar mb-2 mb-md-0 ms-auto">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="py-5 mt-5 position-sticky" style="background-color: #1d262d; z-index: 999;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <h6 class="text-white">CONTENT</h6>
+                    <div class="d-flex flex-column">
+                        <a href="" class="web-footer-color text-decoration-none">New images</a>
+                        <a href="" class="web-footer-color text-decoration-none">The most popular content</a>
+                        <a href="" class="web-footer-color text-decoration-none">Search trends</a>
+                        <a href="" class="web-footer-color text-decoration-none">
+                            Blog</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="text-white">INFORMATION</h6>
+                    <div class="d-flex flex-column">
+                        <a href="" class="web-footer-color text-decoration-none">Plans & pricing</a>
+                        <a href="" class="web-footer-color text-decoration-none">About us</a>
+                        <a href="" class="web-footer-color text-decoration-none">Jobs</a>
+                        <a href="" class="web-footer-color text-decoration-none">Sell your content</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="text-white">LEGAL</h6>
+                    <div class="d-flex flex-column">
+                        <a href="" class="web-footer-color text-decoration-none">Terms & Conditions</a>
+                        <a href="" class="web-footer-color text-decoration-none">License Agreement</a>
+                        <a href="" class="web-footer-color text-decoration-none">Privacy policy</a>
+                        <a href="" class="web-footer-color text-decoration-none">Copyright information</a>
+                        <a href="" class="web-footer-color text-decoration-none">Cookies policy</a>
+                    </div>
+                    <h6 class="text-white mt-5">HELP</h6>
+                    <div class="d-flex flex-column">
+                        <a href="" class="web-footer-color text-decoration-none">Support</a>
+                        <a href="" class="web-footer-color text-decoration-none">Contact</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="text-white">SOCIAL MEDIA</h6>
+                    <div class="d-flex footer-social mt-4">
+                        <a href="" class=""><i class="fa-brands fa-facebook text-white text-center fs-5 me-2"
+                                style="background-color:#4267B2;"></i></a>
+                        <a href="" class=""><i class="fa-brands fa-twitter text-white text-center fs-5 me-2"
+                                style="background-color: #00acee;"></i></a>
+                        <a href="" class=""><i class="fa-brands fa-pinterest text-white text-center fs-5 me-2"
+                                style="background-color:#E60023;"></i></a>
+                        <a href="" class=""><i class="fa-brands fa-instagram text-white text-center fs-5 me-2"
+                                style="background: linear-gradient(29.61deg, #f38334 0%, #da2e7d 50.39%, #6b54c6 100%);"></i></a>
+                        <a href="" class=""><i class="fa-brands fa-youtube text-white text-center fs-5 me-2"
+                                style="background-color:#FF0000;"></i></a>
+                    </div>
+                    <h6 class="web-footer-color mt-4">Get exclusive images sent straight to your inbox</h6>
+                    <button type="button" class="btn border-0 mt-3 web-btn text-white px-4 py-2">Sign up</button>
+                </div>
+            </div>
+            <hr class="web-footer-color">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <a class="fw-semibold d-flex text-decoration-none fs-2 align-items-center web-footer-color"
+                        href="index.html"><i
+                            class="fa-brands fa-connectdevelop pe-2 fs-1 web-footer-color"></i>FreeWeek</a>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-5 d-flex align-items-center">
+                    <p class="web-footer-color m-0">Copyright © 2010-2022 Freepik Company S.L. All rights reserved.</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-4 d-flex align-items-center">
+                    <div class="dropdown ms-auto">
+                        <a class="btn btn-secondary dropdown-toggle bg-transparent shadow-none"
+                            style="border: 3px solid white;" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    Français
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    Português
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
