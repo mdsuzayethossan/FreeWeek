@@ -43,4 +43,37 @@ body {
 .web-text-black {
     color: #374957;
 }
+.web-keyword-btn {
+    border: 2px solid #2669ea;
+    color: #2669ea;
+}
+.web-keyword-btn:hover {
+    border: 2px solid #2669ea;
+    color: #fff;
+    background-color: #2669ea;
+}
+.serch-header-color {
+    color: #a5b7c6;
+}
+.serch-header-color:hover {
+    color: #fff;
+}
+.category-btn {
+    border: 2px solid #a5b7c6;
+    color: $web_gray;
+}
+.category-btn.active {
+    border: 2px solid #2669ea;
+    color: white;
+    background-color: #2669ea;
+}
+.category-btn.active:hover {
+    border: 2px solid #2669ea;
+    color: white;
+    background-color: #2669ea;
+}
+.category-btn:hover {
+    border: 2px solid #a5b7c6;
+    color: $web_gray;
+}
 

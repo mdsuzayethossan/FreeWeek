@@ -1,4 +1,24 @@
-#search-main {
-    margin-top: 5rem;
+#search-page-menu {
+ z-index: 999;
+}
+#search-navbar {
+    z-index: 999;
+    background-color: white;
     
+}
+#search-page-container {
+    .accordion-button {
+        background-color: transparent;
+    }
+    .accordion-item {
+        background-color: transparent;
+    }
+
+}
+#search-dropdown {
+    width: 20%;
+    .dropdown-toggle::after {
+        margin-left: 3rem;
+        color: $web_gray;
+    }
 }
