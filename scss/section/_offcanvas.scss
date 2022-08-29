@@ -1,12 +1,13 @@
 @media (max-width: 991.98px) {
     .offcanvas-collapse {
         position: fixed;
-        top: 56px;
+        top: 65px;
         /*Heightofnavbar*/bottom: 0;
         left: 100%;
         width: 100%;
         padding-right: 1rem;
         padding-left: 1rem;
+        z-index: 9999;
         overflow-y: auto;
         visibility: hidden;
         background: linear-gradient(#7531FA, #4c92f6);

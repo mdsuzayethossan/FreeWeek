@@ -41,11 +41,16 @@ body {
     color: white;
 }
 .web-text-black {
-    color: #374957;
+    color: $web-black;
 }
 .web-keyword-btn {
     border: 2px solid #2669ea;
     color: #2669ea;
+}
+.web-keyword-btn:focus {
+    border: 2px solid #2669ea;
+    color: #fff;
+    background-color: #2669ea;
 }
 .web-keyword-btn:hover {
     border: 2px solid #2669ea;
@@ -61,19 +66,53 @@ body {
 .category-btn {
     border: 2px solid #a5b7c6;
     color: $web_gray;
+    &:hover {
+        border: 2px solid #a5b7c6;
+        color: $web_gray;
+    }
+    &:focus {
+        border: 2px solid #2669ea;
+        color: white;
+        background-color: #2669ea;
+    }
 }
+
 .category-btn.active {
     border: 2px solid #2669ea;
     color: white;
     background-color: #2669ea;
 }
-.category-btn.active:hover {
-    border: 2px solid #2669ea;
-    color: white;
-    background-color: #2669ea;
+
+.bg-gray {
+    background-color: #E6E6E6;
 }
-.category-btn:hover {
-    border: 2px solid #a5b7c6;
-    color: $web_gray;
+.web-follow-btn {
+    background-color: #eff3f6;
+    border: #eff3f6;
+    color: #374957;
+    &:hover {
+        background-color: #eff3f6;
+        border: #eff3f6;
+        color: #374957;
+    }
+    &:focus {
+        color: white;
+        background-color: #2669ea;
+        border: #2669ea;
+    }
 }
+.view-keyword-btn {
+    font-size: 14px;
+    color: #5f7d95;
+    border: 2px solid #cfd9e0;
+    padding: 1px 10px;
+    &:hover, &:focus {
+        font-size: 14px;
+        color: #5f7d95;
+        border: 2px solid #cfd9e0;
+        padding: 1px 10px;
+    }
+}
+
+
 
