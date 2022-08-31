@@ -464,6 +464,9 @@ footer .container .footer-social i {
 #search-page-container .accordion-item {
   background-color: transparent;
 }
+#search-page-container figure:hover {
+  cursor: pointer;
+}
 #search-page-container figure:hover .item-overlay {
   height: 100%;
   display: block;

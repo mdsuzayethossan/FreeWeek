@@ -14,7 +14,7 @@
 
     //
     $(".modal-dialog").css("width", "100%");
-    $('#image-item').click(function(){
+    $('.image-item').click(function(){
       window.location.href = 'view.html';
     });
     

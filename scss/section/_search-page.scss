@@ -21,6 +21,7 @@
     }
     figure {
         &:hover {
+            cursor: pointer;
             .item-overlay {
                 height: 100%;
                 display: block;
