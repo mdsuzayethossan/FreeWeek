@@ -8,64 +8,12 @@
     <title>FreeWeek</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/5779382e95.js" crossorigin="anonymous"></script>
-    <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-    </style>
 </head>
 
 <body>
+
+    <!-- nav section start here -->
     <header>
         <!-- nav section start here -->
         <nav class="navbar navbar-expand-lg bg-dark p-0" aria-label="Main navigation" id="search-page-menu">
@@ -79,7 +27,8 @@
                     <div class="navbar-collapse">
                         <ul class="navbar-nav mt-0 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link serch-header-color" aria-current="page" href="index.html">Vectors</a>
+                                <a class="nav-link serch-header-color" aria-current="page"
+                                    href="search-product.html">Vectors</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link serch-header-color" href="#workspace">Photos</a>
@@ -268,9 +217,9 @@
         </div>
 
     </header>
-
     <div class="container-fluid" id="search-page-container">
         <div class="row">
+            <!-- sidebar part start here -->
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="position-sticky pt-3 sidebar-sticky">
                     <ul class="nav flex-column">
@@ -461,8 +410,10 @@
                     </ul>
                 </div>
             </nav>
+            <!-- sidebar part end here -->
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4" id="search-main">
+                <!-- search keywords start here -->
                 <div class="search-keywords mb-4">
                     <button type="button" class="btn web-keyword-btn mx-2 mb-2"><i class="fa-solid fa-image pe-2"></i>
                         Photos</button>
@@ -481,6 +432,8 @@
                     <button type="button" class="btn web-keyword-btn mx-2 mb-2"><i
                             class="fa-solid fa-magnifying-glass pe-2"></i>Flyer</button>
                 </div>
+                <!-- search keywords end here -->
+
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-4 border-bottom">
                     <div class="btn-toolbar mb-2 mb-md-0 ms-auto">
@@ -497,6 +450,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- body or item start here -->
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                         <figure class="position-relative" id="image-item">
@@ -993,6 +947,7 @@
                         </figure>
                     </div>
                 </div>
+                <!-- body or item end here -->
             </main>
         </div>
     </div>
