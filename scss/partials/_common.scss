@@ -28,6 +28,9 @@ body {
 .web-btn:hover {
     background-color: #2669ea;
 }
+.web-bg {
+    background-color: $primary-text-color;
+}
 .web-text-color:hover {
     color: $primary-text-color;
 }
@@ -59,10 +62,14 @@ body {
 }
 .serch-header-color {
     color: #a5b7c6;
+    &:hover {
+        color: #fff;
+    }
+    &:focus {
+        color: #a5b7c6;
+    }
 }
-.serch-header-color:hover {
-    color: #fff;
-}
+
 .category-btn {
     border: 2px solid #a5b7c6;
     color: $web_gray;

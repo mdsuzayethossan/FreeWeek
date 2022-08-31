@@ -41,6 +41,10 @@ body {
   background-color: #2669ea;
 }
 
+.web-bg {
+  background-color: #7531FA;
+}
+
 .web-text-color:hover {
   color: #7531FA;
 }
@@ -81,9 +85,11 @@ body {
 .serch-header-color {
   color: #a5b7c6;
 }
-
 .serch-header-color:hover {
   color: #fff;
+}
+.serch-header-color:focus {
+  color: #a5b7c6;
 }
 
 .category-btn {
@@ -142,7 +148,7 @@ body {
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 65px;
+    top: 70px;
     /*Heightofnavbar*/
     bottom: 0;
     left: 100%;
@@ -420,6 +426,10 @@ body {
   bottom: -97%;
 }
 
+footer {
+  position: relative;
+  z-index: 9;
+}
 footer .container .footer-social i {
   width: 45px;
   height: 45px;
@@ -434,9 +444,17 @@ footer .container .footer-social i {
 #search-page-menu {
   z-index: 999;
 }
+@media (max-width: 599px) {
+  #search-page-menu {
+    background-color: #7531FA !important;
+  }
+  #search-page-menu .nav-link {
+    color: white !important;
+  }
+}
 
 #search-navbar {
-  z-index: 999;
+  z-index: 99;
   background-color: white;
 }
 

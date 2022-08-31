@@ -1,8 +1,14 @@
 #search-page-menu {
  z-index: 999;
+ @include for-phone-only {
+    background-color: $primary-text-color!important;
+    .nav-link {
+        color: white!important;
+    }
+ }
 }
 #search-navbar {
-    z-index: 999;
+    z-index: 99;
     background-color: white;
     
 }

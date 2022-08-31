@@ -72,7 +72,7 @@
             <div class="container-fluid">
                 <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars text-white py-2"></i>
                 </button>
 
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -110,13 +110,14 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center ms-auto">
-                            <a href="" class="serch-header-color me-4 text-decoration-none">Sell your content</a>
-                            <a href="" class="serch-header-color me-4 text-decoration-none">Pricing</a>
+                            <a href="" class="serch-header-color nav-link me-4 text-decoration-none">Sell your
+                                content</a>
+                            <a href="" class="serch-header-color nav-link me-4 text-decoration-none">Pricing</a>
                             <!-- <p class="mb-0">
                         <a href="register.html" class="text-white me-4 text-decoration-none fw-semibold">Log in</a>
                         <a href="register.html" class="text-white me-4 text-decoration-none fw-semibold">Sign up</a>
                     </p> -->
-                            <a href="" class="serch-header-color me-4"><i class="fa-regular fa-bell"></i></a>
+                            <a href="" class="serch-header-color nav-link me-4"><i class="fa-regular fa-bell"></i></a>
                             <div class="btn-group">
                                 <button type="button" class="text-white border-0 bg-transparent dropdown-toggle"
                                     data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -183,7 +184,7 @@
         </nav>
     </header>
     <!-- nav section end here -->
-    <header class="navbar sticky-top flex-md-nowrap p-0 ps-2 shadow" id="search-navbar">
+    <header class="navbar sticky-top flex-md-nowrap p-0 px-2 shadow" id="search-navbar">
         <a class="fw-semibold d-flex navbar-brand col-md-3 col-lg-2 me-0 p-0 ps-2 fs-2 align-items-center web-text-color text-decoration-none"
             href="index.html"><i class="fa-brands fa-connectdevelop pe-2 fs-1 web-text-color"></i>FreeWeek</a>
         <div class="input-group" id="search-dropdown">
@@ -258,12 +259,11 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+        <input class="form-control form-control-dark w-75 rounded-0 border-0" type="text" placeholder="Search"
             aria-label="Search">
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#"> <i class="fa-solid fa-magnifying-glass web-gray fs-5"
-                        style="width: 20%;"></i></a>
+        <div class="navbar-nav me-2">
+            <div class="nav-item text-nowrap d-flex align-items-center">
+                <a class="nav-link px-3" href="#"> <i class="fa-solid fa-magnifying-glass web-gray fs-5"></i></a>
             </div>
         </div>
 
@@ -533,7 +533,7 @@
                         </figure>
                     </div>
                     <div class="col">
-                        <figure class="position-relative">
+                        <figure class="position-relative" id="image-item">
                             <img src="images/g-8.jpg" class="img-fluid" alt="">
                             <div class="item-overlay position-absolute p-4">
                                 <div class="overlay-content d-flex">
@@ -560,13 +560,11 @@
 
                                     </div>
                                 </div>
-
-
                             </div>
                         </figure>
                     </div>
                     <div class="col">
-                        <figure class="position-relative">
+                        <figure class="position-relative" id="image-item">
                             <img src="images/g-4.webp" class="img-fluid" alt="">
                             <div class="item-overlay position-absolute p-4">
                                 <div class="overlay-content d-flex">
@@ -993,34 +991,6 @@
 
                             </div>
                         </figure>
-                    </div>
-                </div>
-
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog ">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="images/g-10.jpg" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </main>
